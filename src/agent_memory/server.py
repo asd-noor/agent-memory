@@ -34,6 +34,8 @@ from fastembed import TextEmbedding
 # --- CONFIG ---
 def get_db_path() -> str:
     """Determine the database path (git root or current directory)."""
+    dbdir = ".project-hub"
+    dbfile = "memory.sqlite"
     try:
         # Use git to find the root directory
         git_root = (
@@ -43,7 +45,7 @@ def get_db_path() -> str:
             .decode("utf-8")
             .strip()
         )
-        return os.path.join(git_root, ".agent-memory", "db.sqlite")
+        return os.path.join(git_root, dbdir, dbfile)
     except (subprocess.CalledProcessError, FileNotFoundError):
         # Fallback to current working directory if not a git repo or git not found
         return os.path.join(os.getcwd(), ".agent-memory", "db.sqlite")
