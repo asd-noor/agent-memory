@@ -34,7 +34,7 @@ from fastembed import TextEmbedding
 # --- CONFIG ---
 def get_db_path() -> str:
     """Determine the database path (git root or current directory)."""
-    dbdir = ".project-hub"
+    dbdir = ".ctxhub"
     dbfile = "memory.sqlite"
     try:
         # Use git to find the root directory
