@@ -258,7 +258,7 @@ CREATE VIRTUAL TABLE docs_vec USING vec0(
 ```
 
 ### Storage Location
-The database is stored in `.agent-memory/db.sqlite` in the git root directory (or current working directory if not in a git repo). This allows the memory to travel with the project while remaining hidden from version control.
+The database is stored in `.ctxhub/memory.sqlite` in the git root directory (or current working directory if not in a git repo). This allows the memory to travel with the project while remaining hidden from version control.
 
 ## Performance
 
