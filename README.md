@@ -1,5 +1,7 @@
 # Memory Engine MCP Server
 
+> Deprecated: Use [ProjectContext](https://github.com/asd-noor/projectcontext).
+
 A high-performance MCP (Model Context Protocol) server providing long-term memory storage with semantic and keyword search capabilities.
 
 ## Features
